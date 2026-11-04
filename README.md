@@ -21,7 +21,9 @@ Install WL Updater too and the other plugins get their updates from this reposit
 1. Bump `Version` in the plugin header and `Stable tag` in readme.txt, and add the changelog entry.
 2. `python -I i18n.py <slug>` updates the translation files and fails if a text has no pt_BR translation.
 3. `python -I build.py <slug>` writes `dist/<slug>-<version>.zip` and updates `manifest.json`.
-4. Commit and push. Sites with WL Updater see the update within 6 hours, or right away with Dashboard > Updates > Check again.
+4. Commit and push. Sites with WL Updater see the update within 6 hours, or with Dashboard > Updates > Check again. GitHub's CDN can take about 5 minutes to serve the new manifest.
+
+A published zip never changes. `build.py` refuses to rebuild a version that is already in the manifest with different content: bump the version instead.
 
 ## License
 
