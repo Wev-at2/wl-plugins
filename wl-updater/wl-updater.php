@@ -3,7 +3,7 @@
  * Plugin Name:       WL Updater
  * Plugin URI:        https://github.com/Wev-at2/wl-plugins
  * Description:       Keeps Wisionary Lab plugins up to date from GitHub, through the normal WordPress update screen.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.8
  * Requires PHP:      7.4
  * Author:            Wisionary Lab
@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 
 final class WL_Updater {
 
-	const VERSION   = '1.0.0';
+	const VERSION   = '1.0.1';
 	const MANIFEST  = 'https://raw.githubusercontent.com/Wev-at2/wl-plugins/main/manifest.json';
 	const CACHE     = 'wl_updater_manifest';
 	const CACHE_TTL = 6 * HOUR_IN_SECONDS;
@@ -107,6 +107,13 @@ final class WL_Updater {
 			return null;
 		}
 
+		// "Tested up to: 7.1" covers 7.1.x, the same way WordPress.org reports it.
+		$tested = sanitize_text_field( (string) ( $entry['tested'] ?? '' ) );
+		$wp     = (string) get_bloginfo( 'version' );
+		if ( '' !== $tested && 0 === strpos( $wp, $tested . '.' ) ) {
+			$tested = $wp;
+		}
+
 		return array(
 			'slug'         => $slug,
 			'name'         => sanitize_text_field( (string) ( $entry['name'] ?? $slug ) ),
@@ -115,7 +122,7 @@ final class WL_Updater {
 			'sha256'       => $sha,
 			'requires'     => sanitize_text_field( (string) ( $entry['requires'] ?? '' ) ),
 			'requires_php' => sanitize_text_field( (string) ( $entry['requires_php'] ?? '' ) ),
-			'tested'       => sanitize_text_field( (string) ( $entry['tested'] ?? '' ) ),
+			'tested'       => $tested,
 			'homepage'     => esc_url_raw( (string) ( $entry['homepage'] ?? '' ) ),
 			'description'  => sanitize_textarea_field( (string) ( $entry['description'] ?? '' ) ),
 		);

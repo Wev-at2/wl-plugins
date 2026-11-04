@@ -34,8 +34,9 @@ version = header(php, 'Version')
 os.makedirs(os.path.join(base, 'dist'), exist_ok=True)
 name = '%s-%s.zip' % (slug, version)
 out = os.path.join(base, 'dist', name)
+tmp = out + '.tmp'
 
-with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
+with zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as z:
     for root, dirs, files in os.walk(src):
         dirs[:] = sorted(d for d in dirs if not d.startswith('.') and d != '__pycache__')
         for fname in sorted(files):
@@ -48,7 +49,17 @@ with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
             with open(full, 'rb') as fh:
                 z.writestr(info, fh.read())
 
-sha = hashlib.sha256(open(out, 'rb').read()).hexdigest()
+sha = hashlib.sha256(open(tmp, 'rb').read()).hexdigest()
+
+# Um zip publicado nunca muda de conteúdo: o CDN do GitHub guarda cópias e o
+# WL Updater recusaria o pacote pelo checksum. Código novo pede versão nova.
+manifest_path = os.path.join(base, 'manifest.json')
+manifest = json.load(open(manifest_path, encoding='utf-8')) if os.path.exists(manifest_path) else {}
+published = manifest.get(slug, {})
+if published.get('version') == version and published.get('sha256') != sha and '--force' not in sys.argv:
+    os.remove(tmp)
+    sys.exit('%s %s já está publicado com outro conteúdo. Aumente a Version (ou use --force antes do push).' % (slug, version))
+os.replace(tmp, out)
 
 # Descrição curta: primeira linha de texto depois do cabeçalho do readme.
 short = ''
@@ -58,8 +69,6 @@ for block in readme.split('\n\n')[1:]:
         short = block
         break
 
-manifest_path = os.path.join(base, 'manifest.json')
-manifest = json.load(open(manifest_path, encoding='utf-8')) if os.path.exists(manifest_path) else {}
 manifest[slug] = {
     'name': header(php, 'Plugin Name'),
     'version': version,

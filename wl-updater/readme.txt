@@ -4,7 +4,7 @@ Tags: updates, github
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ Internal plugin for sites built by Wisionary Lab. It is not published on WordPre
 To use another manifest, add `define( 'WL_UPDATER_MANIFEST', 'https://...' );` to wp-config.php.
 
 == Changelog ==
+
+= 1.0.1 =
+* "Tested up to: 7.1" now covers 7.1.x, so updates no longer show the "not tested" warning on 7.1.4.
 
 = 1.0.0 =
 * First version.

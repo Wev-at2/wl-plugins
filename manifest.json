@@ -23,9 +23,9 @@
   },
   "wl-updater": {
     "name": "WL Updater",
-    "version": "1.0.0",
-    "package": "https://raw.githubusercontent.com/Wev-at2/wl-plugins/main/dist/wl-updater-1.0.0.zip",
-    "sha256": "054b6fb489423820bc8b6fe12b28cc7451e321bf5a9920d34992b6ebcc7cd4bf",
+    "version": "1.0.1",
+    "package": "https://raw.githubusercontent.com/Wev-at2/wl-plugins/main/dist/wl-updater-1.0.1.zip",
+    "sha256": "33d33bd71c3d73d2d933cfd90ffd7d1d826597015eea1920f806c8a85e32d537",
     "requires": "5.8",
     "requires_php": "7.4",
     "tested": "7.1",
