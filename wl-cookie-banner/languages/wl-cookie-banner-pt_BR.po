@@ -1,0 +1,186 @@
+# Copyright (C) 2026 Wisionary Lab
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wl-cookie-banner 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wl-cookie-banner\n"
+"POT-Creation-Date: 2026-11-04 18:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: wl-cookie-banner\n"
+
+#: wl-cookie-banner.php:27
+msgid "Cookies on this site"
+msgstr "Cookies neste site"
+
+#: wl-cookie-banner.php:28
+msgid "We use analytics cookies to understand how the site is used. They are only turned on if you allow them."
+msgstr "Usamos cookies de medição para entender como o site é usado. Eles só são ativados se você permitir."
+
+#: wl-cookie-banner.php:91
+msgid "Statistics"
+msgstr "Estatísticas"
+
+#: wl-cookie-banner.php:92
+msgid "Count visits and page views in aggregate (Google Analytics)."
+msgstr "Contam visitas e páginas vistas, de forma agregada (Google Analytics)."
+
+#: wl-cookie-banner.php:96
+msgid "Marketing"
+msgstr "Marketing"
+
+#: wl-cookie-banner.php:97
+msgid "Measure ad campaigns and allow personalized ads."
+msgstr "Medem campanhas de anúncios e permitem anúncios personalizados."
+
+#: wl-cookie-banner.php:101 wl-cookie-banner.php:323
+msgid "Preferences"
+msgstr "Preferências"
+
+#: wl-cookie-banner.php:102
+msgid "Remember choices you made on the site, such as language or region."
+msgstr "Lembram escolhas que você fez no site, como idioma ou região."
+
+#: wl-cookie-banner.php:172
+msgid "Privacy Policy"
+msgstr "Política de Privacidade"
+
+#: wl-cookie-banner.php:179
+msgid "Necessary"
+msgstr "Necessários"
+
+#: wl-cookie-banner.php:180
+msgid "Keep the site working and secure. They cannot be turned off."
+msgstr "Mantêm o site funcionando e seguro. Não podem ser desligados."
+
+#: wl-cookie-banner.php:182
+msgid "Always on"
+msgstr "Sempre ativos"
+
+#: wl-cookie-banner.php:196
+msgid "Customize"
+msgstr "Escolher"
+
+#: wl-cookie-banner.php:197
+msgid "Reject"
+msgstr "Recusar"
+
+#: wl-cookie-banner.php:198
+msgid "Save choices"
+msgstr "Salvar escolhas"
+
+#: wl-cookie-banner.php:199
+msgid "Accept"
+msgstr "Aceitar"
+
+#: wl-cookie-banner.php:203 wl-cookie-banner.php:203 wl-cookie-banner.php:213
+msgid "Cookie preferences"
+msgstr "Preferências de cookies"
+
+#: wl-cookie-banner.php:228 wl-cookie-banner.php:229
+msgid "Cookies"
+msgstr "Cookies"
+
+#: wl-cookie-banner.php:291 wl-cookie-banner.php (Plugin Name)
+msgid "WL Cookie Banner"
+msgstr "WL Cookie Banner"
+
+#: wl-cookie-banner.php:295
+msgid "The Privacy Policy page is not set. The banner shows without a link to it."
+msgstr "A Política de Privacidade não está definida. O banner aparece sem o link para ela."
+
+#: wl-cookie-banner.php:296
+msgid "Set up the privacy page"
+msgstr "Configurar a página de privacidade"
+
+#: wl-cookie-banner.php:301
+msgid "The WP Consent API plugin is not active. The banner works, but plugins such as Site Kit only respect the choice when it is installed."
+msgstr "A WP Consent API não está ativa. O banner funciona, mas plugins como o Site Kit só respeitam a escolha com ela instalada."
+
+#: wl-cookie-banner.php:308
+msgid "Title"
+msgstr "Título"
+
+#: wl-cookie-banner.php:312
+msgid "Text"
+msgstr "Texto"
+
+#: wl-cookie-banner.php:314
+msgid "The Privacy Policy link is added to the end of the text automatically."
+msgstr "O link para a Política de Privacidade entra no fim do texto automaticamente."
+
+#: wl-cookie-banner.php:317
+msgid "Categories"
+msgstr "Categorias"
+
+#: wl-cookie-banner.php:321
+msgid "Statistics (Google Analytics)"
+msgstr "Estatísticas (Google Analytics)"
+
+#: wl-cookie-banner.php:322
+msgid "Marketing (ads, Google Ads, Meta)"
+msgstr "Marketing (anúncios, Google Ads, Meta)"
+
+#: wl-cookie-banner.php:335
+msgid "Only check what the site actually uses. Changing the categories shows the banner again to everyone."
+msgstr "Marque só o que o site usa de verdade. Mudar as categorias faz o banner aparecer de novo para todos."
+
+#: wl-cookie-banner.php:339
+msgid "Appearance"
+msgstr "Aparência"
+
+#: wl-cookie-banner.php:342
+msgid "Dark"
+msgstr "Escuro"
+
+#: wl-cookie-banner.php:343
+msgid "Light"
+msgstr "Claro"
+
+#: wl-cookie-banner.php:345
+msgid "Accent color"
+msgstr "Cor de destaque"
+
+#: wl-cookie-banner.php:350
+msgid "Button to review the choice"
+msgstr "Botão para rever a escolha"
+
+#: wl-cookie-banner.php:351
+msgid "Show a small button in the bottom left corner after the choice"
+msgstr "Mostrar um botão pequeno no canto inferior esquerdo depois da escolha"
+
+#: wl-cookie-banner.php:352
+msgid "Without the button, add the [wl_cookies] shortcode to the footer or a link to #wl-cookies. Visitors must be able to change their mind."
+msgstr "Sem o botão, coloque o atalho [wl_cookies] no rodapé ou um link para #wl-cookies. A pessoa precisa conseguir mudar de ideia."
+
+#: wl-cookie-banner.php:355
+msgid "Choice lifetime"
+msgstr "Validade da escolha"
+
+#: wl-cookie-banner.php:356
+msgid "days"
+msgstr "dias"
+
+#: wl-cookie-banner.php:359
+msgid "Ask again"
+msgstr "Pedir de novo"
+
+#: wl-cookie-banner.php:360
+msgid "Show the banner again to all visitors on save"
+msgstr "Mostrar o banner de novo para todos os visitantes ao salvar"
+
+#: wl-cookie-banner.php:364
+#, php-format
+msgid "Current revision: %d"
+msgstr "Revisão atual: %d"
+
+#: wl-cookie-banner.php:376
+msgid "Settings"
+msgstr "Configurações"
+
+#: wl-cookie-banner.php (Description)
+msgid "Cookie notice with accept, reject and per-category choice. Works with the WP Consent API and Google Consent Mode (Site Kit)."
+msgstr "Aviso de cookies com aceite, recusa e escolha por categoria. Integra com a WP Consent API e com o modo de consentimento do Google (Site Kit)."

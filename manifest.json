@@ -1,0 +1,35 @@
+{
+  "wl-cookie-banner": {
+    "name": "WL Cookie Banner",
+    "version": "1.1.0",
+    "package": "https://raw.githubusercontent.com/Wev-at2/wl-plugins/main/dist/wl-cookie-banner-1.1.0.zip",
+    "sha256": "e0003709c66d13daf789cfdf59dd2605f816eb1fdaa39047198902da94062687",
+    "requires": "6.0",
+    "requires_php": "7.4",
+    "tested": "7.1",
+    "homepage": "https://github.com/Wev-at2/wl-plugins",
+    "description": "Lightweight cookie notice with accept, reject and per-category choice. Works with the WP Consent API and Google Consent Mode v2."
+  },
+  "wl-login-guard": {
+    "name": "WL Login Guard",
+    "version": "1.2.0",
+    "package": "https://raw.githubusercontent.com/Wev-at2/wl-plugins/main/dist/wl-login-guard-1.2.0.zip",
+    "sha256": "f2be7ec63ab8294fadf1d2f7fb000eae1144dd930c381ecf6c709508b879e67f",
+    "requires": "5.8",
+    "requires_php": "7.4",
+    "tested": "7.1",
+    "homepage": "https://github.com/Wev-at2/wl-plugins",
+    "description": "Moves the login to a custom address, hides wp-login.php and /wp-admin from logged-out visitors, blocks XML-RPC and hides usernames."
+  },
+  "wl-updater": {
+    "name": "WL Updater",
+    "version": "1.0.0",
+    "package": "https://raw.githubusercontent.com/Wev-at2/wl-plugins/main/dist/wl-updater-1.0.0.zip",
+    "sha256": "054b6fb489423820bc8b6fe12b28cc7451e321bf5a9920d34992b6ebcc7cd4bf",
+    "requires": "5.8",
+    "requires_php": "7.4",
+    "tested": "7.1",
+    "homepage": "https://github.com/Wev-at2/wl-plugins",
+    "description": "Keeps Wisionary Lab plugins up to date from GitHub, through the normal WordPress update screen."
+  }
+}

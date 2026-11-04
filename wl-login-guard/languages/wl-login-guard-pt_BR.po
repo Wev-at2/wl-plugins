@@ -1,0 +1,73 @@
+# Copyright (C) 2026 Wisionary Lab
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wl-login-guard 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wl-login-guard\n"
+"POT-Creation-Date: 2026-11-04 18:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: wl-login-guard\n"
+
+#: wl-login-guard.php:292
+msgid "Error:"
+msgstr "Erro:"
+
+#: wl-login-guard.php:292
+msgid "incorrect username or password."
+msgstr "usuário ou senha incorretos."
+
+#: wl-login-guard.php:381
+msgid "Login address"
+msgstr "Endereço de login"
+
+#: wl-login-guard.php:389
+msgid "Protections"
+msgstr "Proteções"
+
+#: wl-login-guard.php:398
+msgid "Block XML-RPC (xmlrpc.php). Uncheck only if you use the WordPress mobile app or Jetpack."
+msgstr "Bloquear o XML-RPC (xmlrpc.php). Desmarque só se usar o app do WordPress ou o Jetpack."
+
+#: wl-login-guard.php:399
+msgid "Hide usernames (REST API, author pages, login error message)."
+msgstr "Esconder os nomes de usuário (API REST, páginas de autor, mensagem de erro do login)."
+
+#: wl-login-guard.php:418
+msgid "Logged-out visitors who open /wp-admin or wp-login.php get the site's 404 page."
+msgstr "Quem não está logado e abre /wp-admin ou wp-login.php recebe a página 404 do site."
+
+#: wl-login-guard.php:432
+msgid "Set by the WL_LOGIN_SLUG constant in wp-config.php."
+msgstr "Definido pela constante WL_LOGIN_SLUG no wp-config.php."
+
+#: wl-login-guard.php:434
+msgid "Bookmark this address. Lowercase letters, numbers and hyphens."
+msgstr "Salve este endereço nos favoritos. Letras minúsculas, números e hífen."
+
+#: wl-login-guard.php:443
+msgid "This login address cannot be used. The previous one was kept."
+msgstr "Esse endereço de login não pode ser usado. O anterior foi mantido."
+
+#: wl-login-guard.php:448
+msgid "A page or post already uses this address. The previous one was kept."
+msgstr "Já existe uma página ou post com esse endereço. O anterior foi mantido."
+
+#: wl-login-guard.php:472
+msgid "WL Login Guard is active. Your login address is:"
+msgstr "WL Login Guard ativo. Seu endereço de login é:"
+
+#: wl-login-guard.php:478
+msgid "Settings"
+msgstr "Configurações"
+
+#: wl-login-guard.php (Plugin Name)
+msgid "WL Login Guard"
+msgstr "WL Login Guard"
+
+#: wl-login-guard.php (Description)
+msgid "Moves the WordPress login to a custom address (default: /wl-admin), hides wp-login.php and /wp-admin from logged-out visitors, blocks XML-RPC and hides usernames."
+msgstr "Troca o endereço de login do WordPress (padrão: /wl-admin), esconde wp-login.php e /wp-admin de quem não está logado, bloqueia o XML-RPC e esconde os nomes de usuário."
