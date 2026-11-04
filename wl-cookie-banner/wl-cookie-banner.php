@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       WL Cookie Banner
- * Plugin URI:        https://wisionarylab.com/
+ * Plugin URI:        https://github.com/Wev-at2/wl-plugins/tree/main/wl-cookie-banner
  * Description:       Cookie notice with accept, reject and per-category choice. Works with the WP Consent API and Google Consent Mode (Site Kit).
  * Version:           1.1.0
  * Requires at least: 6.0

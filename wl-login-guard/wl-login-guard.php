@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       WL Login Guard
- * Plugin URI:        https://wisionarylab.com/
+ * Plugin URI:        https://github.com/Wev-at2/wl-plugins/tree/main/wl-login-guard
  * Description:       Moves the WordPress login to a custom address (default: /wl-admin), hides wp-login.php and /wp-admin from logged-out visitors, blocks XML-RPC and hides usernames.
  * Version:           1.2.0
  * Requires at least: 5.8
